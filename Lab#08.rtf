@@ -1,0 +1,265 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;\f4\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red106\green62\blue62;
+\red0\green0\blue192;\red42\green0\blue255;\red63\green127\blue95;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c24706\c49804\c37255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 17.\'a0\
+Ask user for number of people attending the cookout\
+Ask user for number of hotdogs each person is given\
+Define total hotdogs\
+Define hotdogs required\
+Define buns required\
+Define hotdogs leftover\
+Define buns leftover\
+Operand total hotdogs for # of hot dog packages required\
+Operand for total hotdog buns packages required.\'a0\
+Define hotdogs leftover\
+Operand for number of hotdogs leftover\
+Operand for buns leftover\'a0\
+Display number of hotdog packages\
+Display number of bun packages\
+Display leftover hotdogs\
+Display leftover buns\
+\
+19.\
+Create scanner\
+Display \'93Wi-fi diagnostics\'94\
+Display \'93Reboot the computer and try to connect\'94\
+Display \'91Did that fix the problem\'94 \
+Create an if loop for input of user\
+If no it goes to next line\
+Take input from user\
+Display \'93Reboot the router and try to connect\'94\
+Display \'91Did that fix the problem\'94 \
+Take input from user\
+Display "Make sure the cables between the router and modem are plugged in firmly."\
+Display \'93Did that fix the problem\'94\
+Take input\
+Display \'93Move router to new location\'94\
+Display \'93Did that fix the problem\'94\
+Take input\
+Display \'93Get a new router\'94\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 package
+\f2\b0 \cf0  lab08;\
+\
+
+\f1\b \cf3 import
+\f2\b0 \cf0  java.util.Scanner;\
+\
+
+\f1\b \cf3 public
+\f2\b0 \cf0  
+\f1\b \cf3 class
+\f2\b0 \cf0  HotdogCalculator \{\
+	\
+	\
+	
+\f1\b \cf3 public
+\f2\b0 \cf0  
+\f1\b \cf3 static
+\f2\b0 \cf0  
+\f1\b \cf3 void
+\f2\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+	\
+		
+\f1\b \cf3 int
+\f2\b0 \cf0  \cf4 people\cf0 , \cf4 hotdogs\cf0 , \cf4 hotdogsNeeded\cf0 , \cf4 minimumPackHD\cf0 ,\
+		\cf4 minimumPackB\cf0 , \cf4 remainingHD\cf0 , \cf4 remainingB\cf0 ;\
+		\
+		Scanner \cf4 \ul \ulc4 keyboard\cf0 \ulnone  = 
+\f1\b \cf3 new
+\f2\b0 \cf0  Scanner(System.
+\f3\i\b \cf5 in
+\f2\i0\b0 \cf0 );\
+		\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Please enter the number of people attending"\cf0 );\
+		\cf4 people\cf0  = \cf4 keyboard\cf0 .nextInt();\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Please enter the number of hotdogs each person will have?"\cf0 );\
+		\cf4 hotdogs\cf0  = \cf4 keyboard\cf0 .nextInt();\
+		\
+		\cf7 // Calculates the number of \ul hotdogs\ulnone  needed\cf0 \
+		\cf4 hotdogsNeeded\cf0  = \cf4 people\cf0  * \cf4 hotdogs\cf0 ;\
+\
+		\cf7 // Calculates the minimum number of packs of buns needed to purchase\cf0 \
+		\cf4 minimumPackHD\cf0  = \cf4 hotdogsNeeded\cf0  /10 + 1;\
+		\
+		\
+		\cf7 // Calculates the minimum number of packs of \ul hotdogs\ulnone  needed to purchase\cf0 \
+		\cf4 minimumPackB\cf0  = \cf4 hotdogsNeeded\cf0  / 8 + 1; \
+		\
+		\cf7 // Calculates the number of leftover \ul hotdogs\cf0 \ulnone \
+		\cf4 remainingHD\cf0  = (\cf4 minimumPackHD\cf0  * 10) - \cf4 hotdogsNeeded\cf0 ; \
+		\
+		\cf7 // Calculates the number of leftover buns\cf0 \
+		\cf4 remainingB\cf0  = (\cf4 minimumPackB\cf0  * 8) - \cf4 hotdogsNeeded\cf0 ; \
+		\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "The minimum packs of hotdogs necessary is : "\cf0  + \cf4 minimumPackHD\cf0 );\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "The minimum packs of buns necessary is: "\cf0  + \cf4 minimumPackB\cf0 );\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Number of hotdogs remaining: "\cf0  + \cf4 remainingHD\cf0 );\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Number of buns remaining: "\cf0  + \cf4 remainingB\cf0 );\
+\
+		\
+\
+	\}\
+\
+\}\
+\
+\
+
+\f1\b \cf3 package
+\f2\b0 \cf0  lab08;\
+\
+
+\f1\b \cf3 import
+\f2\b0 \cf0  java.util.Scanner;\
+\
+
+\f1\b \cf3 public
+\f2\b0 \cf0  
+\f1\b \cf3 class
+\f2\b0 \cf0  Wifi \{\
+\
+	
+\f1\b \cf3 public
+\f2\b0 \cf0  
+\f1\b \cf3 static
+\f2\b0 \cf0  
+\f1\b \cf3 void
+\f2\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		String \cf4 user\cf0 ;\
+		Scanner \cf4 \ul \ulc4 keyboard\cf0 \ulnone  = 
+\f1\b \cf3 new
+\f2\b0 \cf0  Scanner(System.
+\f3\i\b \cf5 in
+\f2\i0\b0 \cf0 );\
+		\
+		\
+	\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Please answer the following questions with yes or no."\cf0 );\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Reboot the computer and try to reconnect."\cf0 );\
+		\
+		\cf7 // Code that will be repeated for the rest of the flowchart\cf0 \
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Did that fix your problem?"\cf0 );\
+		\cf4 user\cf0  = \cf4 keyboard\cf0 .nextLine();\
+		\
+		
+\f1\b \cf3 if
+\f2\b0 \cf0 (\cf4 user\cf0  == \cf6 "yes"\cf0 ) \{\
+			\cf7 //System.out.println("Enjoy your connection :)");\cf0 \
+			System.
+\f4\i exit
+\f2\i0 (0);\
+		\}\
+		\
+		
+\f1\b \cf3 else
+\f2\b0 \cf0  \
+			\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Reboot the router and try to reconnect."\cf0 );\
+\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Did that fix your problem?"\cf0 );\
+		\cf4 user\cf0  = \cf4 keyboard\cf0 .nextLine();\
+		\
+		
+\f1\b \cf3 if
+\f2\b0 \cf0 (\cf4 user\cf0  == \cf6 "yes"\cf0 ) \{\
+			System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Enjoy your connection :)"\cf0 );\
+			System.
+\f4\i exit
+\f2\i0 (0);\
+		\}\
+		\
+		
+\f1\b \cf3 else
+\f2\b0 \cf0  \
+			\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Make sure the cables between the router & modem are plugged in firmly."\cf0 );\
+		\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Did that fix your problem?"\cf0 );\
+		\cf4 user\cf0  = \cf4 keyboard\cf0 .nextLine();\
+		\
+		
+\f1\b \cf3 if
+\f2\b0 \cf0 (\cf4 user\cf0  == \cf6 "yes"\cf0 ) \{\
+			System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Enjoy your connection :)"\cf0 );\
+			System.
+\f4\i exit
+\f2\i0 (0);\
+		\}\
+		\
+		
+\f1\b \cf3 else
+\f2\b0 \cf0 			\
+			\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Move the router to a new location."\cf0 );\
+		\
+		\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Did that fix your problem?"\cf0 );\
+		\cf4 user\cf0  = \cf4 keyboard\cf0 .nextLine();\
+		\
+		
+\f1\b \cf3 if
+\f2\b0 \cf0 (\cf4 user\cf0  == \cf6 "yes"\cf0 ) \{\
+			System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Enjoy your connection :)"\cf0 );\
+			System.
+\f4\i exit
+\f2\i0 (0);\
+		\}\
+		\
+		
+\f1\b \cf3 else
+\f2\b0 \cf0  \
+		\
+		System.
+\f3\i\b \cf5 out
+\f2\i0\b0 \cf0 .println(\cf6 "Get a new router."\cf0 );\
+		\
+	\}\
+	\}}

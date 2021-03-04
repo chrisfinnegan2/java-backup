@@ -1,0 +1,348 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 Menlo-BoldItalic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red0\green0\blue192;
+\red63\green127\blue95;\red106\green62\blue62;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl500\qc\partightenfactor0
+
+\f0\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \outl0\strokewidth0 \strokec2 Pseudocode
+\f1\fs24 \ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 \ul \ulc2 PART A
+\f1\fs24 \ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Create a class named payroll
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Ask for users name
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Ask for users ID
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define payRate
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define hours worked
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 grossPay is payRate*hours
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Ask for user data
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Call accessor Method for grossPay
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Accessor returns the variable value
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 \ul \ulc2 PART B
+\f1\fs24 \ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Create class for widgets
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define a shift as when widgets are made
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define two shifts each day
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define a shift equal to 8 hours
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define each hour # of widgets produced per each shift
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define value for total widgets made day each day
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Operand # of shifts * # of hours a shift * # of widgets produced each hour
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Ask user for how many widgets must be produced
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Call accessor method for # of widgets produced daily
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Accessor returns the variable value
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Define value for days needed for widget production
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Value days needed is equal to operand of widgetsNeeded/widgetsDaily
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Call accessor method for # of days needed
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Accessor returns the variable value
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+package
+\f3\b0 \cf0  lab06;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  Payroll \{\
+		
+\f2\b \cf3 private
+\f3\b0 \cf0  String \cf4 name\cf0 ;\
+		
+\f2\b \cf3 private
+\f3\b0 \cf0  
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf4 idNumber\cf0 ;\
+		
+\f2\b \cf3 private
+\f3\b0 \cf0  
+\f2\b \cf3 double
+\f3\b0 \cf0  \cf4 grossPay\cf0 , \cf4 hoursWorked\cf0 , \cf4 hourlyPay\cf0 ;\
+	\
+	\
+		\cf5 // Constructor\cf0 \
+		\
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  Payroll(
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf6 y\cf0 , String \cf6 x\cf0 )\
+		\{\
+			\cf4 name\cf0  = \cf6 x\cf0 ;\
+			\cf4 idNumber\cf0  = \cf6 y\cf0 ;\
+			\cf4 hourlyPay\cf0  = 10.50;\
+		\}\
+		\
+		\
+		\cf5 // Set Name \cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setName(String \cf6 x\cf0 )\
+		\{\
+			\cf4 name\cf0  = \cf6 x\cf0 ;\
+		\}\
+		\
+		\cf5 // Set id Number \cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setIdNumber (
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf6 y\cf0 )\
+		\{\
+			\cf4 idNumber\cf0  = \cf6 y\cf0 ;\
+		\}\
+		\
+		\cf5 // Set hoursWorked\cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setHoursWorked(
+\f2\b \cf3 double
+\f3\b0 \cf0  \cf6 z\cf0 )\
+		\{\
+			\cf4 hoursWorked\cf0  = \cf6 z\cf0 ;\
+		\}\
+		\
+		\cf5 // Set gross pay\cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setGrossPay()\
+		\{\
+			\cf4 grossPay\cf0  = \cf4 hoursWorked\cf0  * \cf4 hourlyPay\cf0 ;\
+		\}\
+		\
+		\cf5 // Return name \cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  String getName()\
+		\{\
+			
+\f2\b \cf3 return
+\f3\b0 \cf0  \cf4 name\cf0 ;\
+		\}\
+		\
+		\cf5 // Return id Number \cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 int
+\f3\b0 \cf0  getIDnumber()\
+		\{\
+			
+\f2\b \cf3 return
+\f3\b0 \cf0  \cf4 idNumber\cf0 ;\
+		\}\
+		\
+		\cf5 // Return gross pay \cf0 \
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 double
+\f3\b0 \cf0  getGrossPay()\
+		\{\
+			\cf5 //grossPay = hoursWorked * hourlyPay;\cf0 \
+			
+\f2\b \cf3 return
+\f3\b0 \cf0  \cf4 grossPay\cf0 ;\
+		\}\
+		\
+		\
+		
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 static
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  main(String[] \cf6 args\cf0 ) \
+		\
+		\{\
+			\cf5 // Creating the payroll object example\cf0 \
+			Payroll \cf6 example\cf0  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Payroll(0, \cf7 "name"\cf0 );\
+			\
+			\cf5 // Assigning values to the object example's variables \cf0 \
+			\cf5 // Setting the name, id, and hours worked\cf0 \
+					\cf6 example\cf0 .setName(\cf7 "Christopher"\cf0 );\
+					\cf6 example\cf0 .setIdNumber(0256);\
+					\cf6 example\cf0 .setHoursWorked(38);\
+			\cf5 // Return the information to the user\cf0 \
+					\cf6 example\cf0 .setGrossPay();\
+					System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "The total amount of gross pay for the employee is $"\cf0  + \cf6 example\cf0 .getGrossPay());\
+					\
+					\
+		\}\
+		\
+		\
+	\}\
+\
+\
+\
+
+\f2\b \cf3 package
+\f3\b0 \cf0  lab06;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  Widgets \{\
+	
+\f2\b \cf3 private
+\f3\b0 \cf0  
+\f2\b \cf3 double
+\f3\b0 \cf0  \cf4 day\cf0 , \cf4 wPR\cf0 , \cf4 days\cf0 , \cf4 wTotal\cf0 , \cf4 wRequired\cf0 , \cf4 wPD\cf0 , \cf4 hRequired\cf0 ;\
+	\
+	\cf5 // Constructor\cf0 \
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  Widgets() \
+	\{\
+		\cf4 wPR\cf0  = 10; \cf5 // Widgets per hour\cf0 \
+		\cf4 wPD\cf0  = 160; \cf5 // Maximum number of widgets per day\cf0 \
+	\}\
+\
+	\cf5 // Method to set the number of days \cf0 \
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setDays(
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf6 x\cf0 )\
+	\{\
+		\cf4 days\cf0  = \cf6 x\cf0 ;\
+	\}\
+	\cf5 // set the requisite number of widgets \cf0 \
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setRequiredW(
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf6 y\cf0 )\
+	\{\
+		\cf4 wRequired\cf0  = \cf6 y\cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 static
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf5 // Creation of the widgets object\cf0 \
+		Widgets \cf6 example\cf0  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Widgets();\
+		\cf5 // Setting of the required number of widgets and number of days\cf0 \
+		\cf5 // Simulating the user requesting a number of widgets in a number of days\cf0 \
+		\cf6 example\cf0 .setRequiredW(320);\
+		\cf6 example\cf0 .setDays(2);\
+		\
+		\
+		\cf5 // Small algorithm that will calculate the ability of the factory\cf0 \
+		\cf5 // to produce the necessary number of widgets in the given number of days\cf0 \
+		System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "The user has requested "\cf0  + \cf6 example\cf0 .\cf4 wRequired\cf0  +\
+		\cf7 " widgets in "\cf0  + \cf6 example\cf0 .\cf4 days\cf0  + \cf7 " days!"\cf0 );\
+		\cf6 example\cf0 .\cf4 wTotal\cf0  = \cf6 example\cf0 .\cf4 days\cf0  * \cf6 example\cf0 .\cf4 wPD\cf0 ;\
+		
+\f2\b \cf3 if
+\f3\b0 \cf0  (\cf6 example\cf0 .\cf4 wTotal\cf0  >= \cf6 example\cf0 .\cf4 wRequired\cf0 )\
+		\{\
+			\cf6 example\cf0 .\cf4 hRequired\cf0  = \cf6 example\cf0 .\cf4 wRequired\cf0  / \cf6 example\cf0 .\cf4 wPR\cf0 ; \
+			\cf6 example\cf0 .\cf4 day\cf0  = \cf6 example\cf0 .\cf4 hRequired\cf0  / 24;\
+			System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "The order can be completed. It will take "\cf0  + \cf6 example\cf0 .\cf4 day\cf0  + \cf7 " days."\cf0 );\
+		\}\
+		
+\f2\b \cf3 else
+\f3\b0 \cf0 \
+		\{\
+			System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "The order is too large and may not be created within the specified timeframe."\cf0 );\
+		\}\
+	\}\
+\
+\}\
+}

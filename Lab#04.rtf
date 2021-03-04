@@ -1,0 +1,281 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 Menlo-BoldItalic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red106\green62\blue62;
+\red0\green0\blue192;\red42\green0\blue255;\red63\green127\blue95;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c24706\c49804\c37255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \outl0\strokewidth0 \strokec2 Test Average
+\f1\fs24 \ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Number of variables used: 5
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Input: Test#1 Score
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display: Test#1 Score
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Input: Test#2 Score
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display: Test#2 Score
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Input: Test#3 Score
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display: Test#3 Score
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Add all three together and divide them by 3 to find the average
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display: Test Score Average
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 \ul \ulc2 Male and Female Percentage
+\f1\fs24 \ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Number of variables used: 5
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Input: Total number of male students
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Input: Total number of female students
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Add the total number of male and female students to get the total number of students
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Divide the total number of male students by the total students
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display: male percentage in the class
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Divide the total number of female students by total students in the class
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display: total percentage of female students in the class
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b0\fs29\fsmilli14667 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \outl0\strokewidth0 \strokec2 Stock Commission
+\f1\fs24 \ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Using Six Variables (Double)\'a0
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Multiply # of stocks by price per share\'a0
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display total paid for stocks alone
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Multiply total paid for stocks alone by commision percentage
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display total commision
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Add total paid for stocks alone and total commision
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Display total amount paid	
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+package
+\f3\b0 \cf0  lab04;\
+\
+
+\f2\b \cf3 import
+\f3\b0 \cf0  java.util.Scanner;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  TestAverage \{\
+\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 static
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		
+\f2\b \cf3 double
+\f3\b0 \cf0   \cf4 score1\cf0 , \cf4 score2\cf0 , \cf4 score3\cf0 , \cf4 scoreTotal\cf0 , \cf4 scoreAverage\cf0 ;\
+		\
+		Scanner \cf4 \ul \ulc4 keyboard\cf0 \ulnone  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Scanner(System.
+\f4\i\b \cf5 in
+\f3\i0\b0 \cf0 );\
+		\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "Please enter 3 test scores"\cf0 ); \cf7 //Get the 3 test scores from the student\cf0 \
+		\cf4 score1\cf0  = \cf4 keyboard\cf0 .nextInt();\
+		\cf4 score2\cf0  = \cf4 keyboard\cf0 .nextInt();\
+		\cf4 score3\cf0  = \cf4 keyboard\cf0 .nextInt();\
+		\
+		\
+		\cf7 // Averages the students scores\cf0 \
+		\cf4 scoreTotal\cf0  = \cf4 score1\cf0  + \cf4 score2\cf0  + \cf4 score3\cf0 ;\
+		\cf4 scoreAverage\cf0  = \cf4 scoreTotal\cf0 /3; \
+		\
+		\cf7 // Prints out the individual scores of the student \cf0 \
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The student scored "\cf0  + \cf4 score1\cf0  + \cf6 " on the first test."\cf0 );\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The student scored "\cf0  + \cf4 score2\cf0  + \cf6 " on the second test."\cf0 );\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The student scored "\cf0  + \cf4 score3\cf0  + \cf6 " on the third test."\cf0 );\
+		\
+		\cf7 // Prints out the students average\cf0 \
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The students average is "\cf0  + \cf4 scoreAverage\cf0 );\
+		\
+		\
+	\
+\
+	\}\
+\
+\}\
+\
+
+\f2\b \cf3 package
+\f3\b0 \cf0  lab04;\
+\
+
+\f2\b \cf3 import
+\f3\b0 \cf0  java.util.Scanner;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  MaleAndFemalePercentage \{\
+\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 static
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+				
+\f2\b \cf3 double
+\f3\b0 \cf0   \cf4 maleTotal\cf0 , \cf4 femaleTotal\cf0 , \cf4 totalStudents\cf0 , \cf4 percentage\cf0 , \cf4 percentage2\cf0 ;\
+				\
+				Scanner \cf4 \ul \ulc4 keyboard\cf0 \ulnone  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Scanner(System.
+\f4\i\b \cf5 in
+\f3\i0\b0 \cf0 );\
+				\
+				\
+				\cf7 // Takes the number of students \cf0 \
+				System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "Please enter the number of male students"\cf0 ); \cf7 //\cf0 \
+				\cf4 maleTotal\cf0  = \cf4 keyboard\cf0 .nextInt();\
+				\
+				System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "Please enter the number of female students"\cf0 ); \cf7 //\cf0 \
+				\cf4 femaleTotal\cf0  = \cf4 keyboard\cf0 .nextInt();\
+				\
+				\cf7 // Calculates and returns the male and female percentage\cf0 \
+				\cf4 totalStudents\cf0  = \cf4 maleTotal\cf0  + \cf4 femaleTotal\cf0 ;\
+				\cf4 percentage\cf0  = \cf4 maleTotal\cf0 /\cf4 totalStudents\cf0 ;\
+				\cf4 percentage2\cf0  = \cf4 femaleTotal\cf0 /\cf4 totalStudents\cf0 ; \
+				System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The class is "\cf0  + \cf4 percentage\cf0  + \cf6 "% male and "\cf0  + \cf4 percentage2\cf0  + \cf6 "% Female."\cf0 ); \
+				\
+	\}\
+\
+\}\
+\
+
+\f2\b \cf3 package
+\f3\b0 \cf0  lab04;\
+\
+
+\f2\b \cf3 import
+\f3\b0 \cf0  \ul java.util.Scanner\ulnone ;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  StockCommission \{\
+\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 static
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		
+\f2\b \cf3 double
+\f3\b0 \cf0   \cf4 totalShares\cf0 , \cf4 sharePrice\cf0 , \cf4 commissionPercentage\cf0 , \cf4 commissionTotal\cf0 , \cf4 totalPaid\cf0 , \cf4 total\cf0 ;\
+		\
+		\cf7 // Initiates the values for the necessary integers\cf0 \
+		\cf4 totalShares\cf0  = 1000;\
+		\cf4 sharePrice\cf0  = 25.50;\
+		\cf4 commissionPercentage\cf0  = .02;\
+		\
+		\cf7 // Calculates the share prices, totals, and commission\cf0 \
+		\cf4 totalPaid\cf0 = \cf4 totalShares\cf0  * \cf4 sharePrice\cf0 ;\
+		\cf4 commissionTotal\cf0  = \cf4 totalPaid\cf0  * \cf4 commissionPercentage\cf0 ;\
+		\cf4 total\cf0  = \cf4 totalPaid\cf0  + \cf4 commissionTotal\cf0 ;\
+		\
+		\cf7 // Outputs the calculated information\cf0 \
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The amount paid for the stock equals $"\cf0  + \cf4 totalPaid\cf0 );\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The amount of commission equals $"\cf0  + \cf4 commissionTotal\cf0 );\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf6 "The total amount payed equals $"\cf0  + \cf4 total\cf0 );\
+		\
+	\}\
+\
+\}\
+}

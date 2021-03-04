@@ -1,0 +1,102 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red106\green62\blue62;
+\red0\green0\blue192;\red63\green127\blue95;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c16471\c0\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \ul \ulc0 Pseudocode for sum of numbers:\ulnone \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Create scanner object\
+Asks user to enter number\
+Display user entered number\
+Store input in variable number\
+Create loop starting at one to the number that sums the series\
+Display the required sum\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\ul Pseudocode for pennies for pay\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \ulnone Create scanner object\
+Ask user for input of number of days worked\
+Validate that the input is >0 by using a while loop\
+Display value\
+Define variables of pennies, days, and total pay\
+Create loop\
+Display totalPay\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 import\cf0  java.util.Scanner;\
+\
+\cf3 public\cf0  \cf3 class\cf0  SumOfNumbers \{\
+\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		\cf3 int\cf0  \cf4 number\cf0 , \cf4 i\cf0 , \cf4 sum\cf0 ;\
+		\
+		Scanner \cf4 \ul \ulc4 keyboard\cf0 \ulnone  = \cf3 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		\
+		\cf6 // Gets the number that will be used for the calculation\cf0 \
+		System.\cf5 out\cf0 .println(\cf7 "Please enter a number greater than zero."\cf0 );\
+		\cf4 number\cf0  = \cf4 keyboard\cf0 .nextInt();\
+		\cf4 sum\cf0  = 0;\
+		\cf6 // Algorithm to find the sum of the number\cf0 \
+		\cf3 for\cf0 (\cf4 i\cf0 =1; \cf4 i\cf0 <=\cf4 number\cf0 ; \cf4 i\cf0 ++) \{\
+			\cf4 sum\cf0 +=\cf4 i\cf0 ;\
+			\
+		\}\
+		\cf6 // Output of the sum\cf0 \
+		System.\cf5 out\cf0 .println(\cf7 "The sum is "\cf0  + \cf4 sum\cf0 );\
+\
+	\}\
+\
+\}\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 package\cf0  lab09;\
+\cf3 import\cf0  java.util.Scanner;\
+\
+\cf3 public\cf0  \cf3 class\cf0  Pennies \{\
+\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf4 args\cf0 ) \{\
+		\
+		\cf6 // Declare necessary variables\cf0 \
+		\cf3 double\cf0  \cf4 maxDays\cf0 , \cf4 day\cf0 , \cf4 pennies\cf0 , \cf4 totalPay\cf0 ;\
+		\
+		\cf6 // Takes the number of days from the user\cf0 \
+		System.\cf5 out\cf0 .print(\cf7 "Enter the number of days you worked for: "\cf0 );\
+		Scanner \cf4 \ul \ulc4 keyboard\cf0 \ulnone  = \cf3 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		\cf4 maxDays\cf0  = \cf4 keyboard\cf0 .nextDouble();\
+		\cf6 // Checks that the number of days is at least 1\cf0 \
+			\cf3 while\cf0  (\cf4 maxDays\cf0  < 1)\
+			\{\
+			System.\cf5 out\cf0 .println(\cf7 "Invalid input, please enter a positive integer."\cf0 );\
+			\cf4 maxDays\cf0  = \cf4 keyboard\cf0 .nextDouble();\
+			\}\
+		\cf6 // Sets the values for necessary variables\cf0 \
+			\cf4 day\cf0  = 1;\
+			\cf4 pennies\cf0  = 1;\
+			\cf4 totalPay\cf0  = 0;\
+		\cf6 // Creates the table that will be filled out by the while loop\cf0 \
+			System.\cf5 out\cf0 .println(\cf7 "Day \\t |  Pennies"\cf0 );\
+			System.\cf5 out\cf0 .println(\cf7 "~~~~~~~~~~~~~~~~~~~~~"\cf0 );\
+			\cf3 while\cf0  (\cf4 day\cf0  <= \cf4 maxDays\cf0 ) \
+			\{\
+			System.\cf5 out\cf0 .println(\cf4 day\cf0  + \cf7 "\\t"\cf0  + \cf7 "\\t"\cf0  + \cf4 pennies\cf0 );\
+			\cf4 totalPay\cf0  = \cf4 totalPay\cf0  + \cf4 pennies\cf0 ; \cf4 day\cf0 ++; \cf4 pennies\cf0  = \cf4 pennies\cf0 *2;\
+			\}\
+			System.\cf5 out\cf0 .println(\cf7 "Total pay is : $"\cf0  + \cf4 totalPay\cf0  / 100); \
+			\
+	\
+	      \
+\}\}\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+}
